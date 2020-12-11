@@ -1,0 +1,55 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Online Basic Calculator">
+  	<meta name="keywords" content="HTML, CSS, JavaScript">
+  	<meta name="author" content="Cecille Tamalla">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<title>Basic Calculator</title>
+	<link rel="icon" href="logo-01.png">
+</head>
+
+<body>
+	<form name="calcform">
+		<table border="1" cellspacing="0" cellpadding="20px">
+			<tr>
+				<th colspan="4"><input type="text" name="txt" readonly="readonly" autofocus=""></th>
+			</tr>
+
+			<tr>
+				<td colspan="2"><b><input type="button" name="cancel_btn" value="C" readonly="readonly" onclick="calcform.txt.value=''" class="cancel" /></b></td>
+				<td><b><input type="button" name="backSpace"  id="backSpace" value="&larr;" onclick="calcform.txt.value = calcform.txt.value.slice(0,calcform.txt.value.length-1)" class="operator" /></b></td>
+				<td><b><input type="button" name="div_btn" value="&divide;" onclick="calcform.txt.value+='/'" class="operator"></b></td>
+			</tr>
+
+			<tr>
+				<td><b><input type="button" name="numbutton" value="7" onclick="calcform.txt.value+='7'" class="numbutton" /></b></td>
+				<td><b><input type="button" name="numbutton" value="8" onclick="calcform.txt.value+='8'" class="numbutton" /></b></td>
+				<td><b><input type="button" name="numbutton" value="9" onclick="calcform.txt.value+='9'" class="numbutton" /></b></td>
+				<td><b><input type="button" name="add_btn" value="+" onclick="calcform.txt.value+='+'" class="operator" /></b></td>
+			</tr>
+
+			<tr>
+				<td><b><input type="button" name="numbutton" value="4" onclick="calcform.txt.value+='4'" class="numbutton" /></b></td>
+				<td><b><input type="button" name="numbutton" value="5" onclick="calcform.txt.value+='5'" class="numbutton" /></b></td>
+				<td><b><input type="button" name="numbutton" value="6" onclick="calcform.txt.value+='6'" class="numbutton" /></b></td>
+				<td><b><input type="button" name="sub_btn" value="-" onclick="calcform.txt.value+='-'" class="operator" /></b></td>
+			</tr>
+
+			<tr>
+				<td><b><input type="button" name="numbutton" value="1" onclick="calcform.txt.value+='1'" class="numbutton" /></b></td>
+				<td><b><input type="button" name="numbutton" value="2" onclick="calcform.txt.value+='2'" class="numbutton" /></b></td>
+				<td><b><input type="button" name="numbutton" value="3" onclick="calcform.txt.value+='3'" class="numbutton" /></b></td>
+				<td><b><input type="button" name="mul_btn" value="x" onclick="calcform.txt.value+='*'" class="operator" /></b></td>
+			</tr>
+
+			<tr>
+				<td><b><input type="button" name="point_btn" value="." onclick="calcform.txt.value+='.'" class="numbutton1" /></b></td>
+				<td><b><input type="button" name="numbutton" value="0" onclick="calcform.txt.value+='0'" class="numbutton" /></b></td>
+				<td colspan="2"><b><input type="button" name="total" value="=" onclick="calcform.txt.value=eval(calcform.txt.value)" class="total" /></b></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

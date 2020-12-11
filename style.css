@@ -1,0 +1,123 @@
+body {
+	background: rgb(232,11,97);
+	background: linear-gradient(90deg, rgba(232,11,97,1) 9%, rgba(0,0,0,1) 68%);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+}
+form {
+	margin-top: 80px;
+}
+table {
+	width: 32%;
+	height: 400px;
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+	border: none;
+	box-shadow: 0 0 5px 5px #0A0A0A;
+}
+input[type=text] {
+	width: 100%;
+	height: 50px;
+	alignment-baseline: center;
+	text-align: right;
+	padding-right: 5px;
+	background-color: white;
+	cursor: pointer;
+	font-size: 24;
+	border: none;
+	border-radius: 5px;
+}
+.numbutton {
+	width: 60px;
+	height: 40px;
+	alignment-baseline: center;
+	background-color: white;
+	cursor: pointer;
+	font-size: 24;
+	border: none;
+	border-radius: 5px;
+}
+.numbutton:hover {
+	outline: 3px solid white;
+}
+.operator {
+	width: 60px;
+	height: 40px;
+	alignment-baseline: center;
+	background-color: blue;
+	cursor: pointer;
+	color: white;
+	font-size: 30;
+	border: none;
+	border-radius: 5px;
+}
+.operator:hover {
+	outline: 3px solid blue;
+}
+.cancel {
+	width: 167px;
+	height: 40px;
+	alignment-baseline: center;
+	background-color: red;
+	cursor: pointer;
+	font-size: 30;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+.cancel:hover {
+	outline: 3px solid red;
+}
+.total {
+	width: 167px;
+	height: 40px;
+	alignment-baseline: center;
+	background-color: green;
+	cursor: pointer;
+	font-size: 30;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+.total:hover {
+	outline: 3px solid green;
+}
+.numbutton1 {
+	font-size: 36;
+	width: 60px;
+	height: 40px;
+	alignment-baseline: center;
+	background-color: white;
+	cursor: pointer;background-color: white;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+}
+.numbutton1:hover {
+	outline: 3px solid white;
+}
+@media only screen and (max-width: 600px) {
+	table {
+		width: 80%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	form {
+		margin-top: 30px;
+	}
+}
+@media only screen and (max-width: 400px) and (min-width: 300px) {
+	table {
+		width: 100%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	form {
+		margin-top: 10px;
+	}
+}
